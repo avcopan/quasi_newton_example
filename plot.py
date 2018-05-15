@@ -27,7 +27,7 @@ matplotlib.pyplot.plot(*zip(*traj_nr), color='k')
 matplotlib.pyplot.scatter(*zip(*traj_nr), color='k')
 s = '{:d} steps'.format(len(traj_nr))
 matplotlib.pyplot.text(0.2, 0.1, s=s, fontsize=18, fontweight='bold')
-matplotlib.pyplot.savefig('nr')
+matplotlib.pyplot.savefig('figs/nr.png')
 matplotlib.pyplot.clf()
 
 # Plot the quasi-Newton trajectory
@@ -36,7 +36,7 @@ matplotlib.pyplot.plot(*zip(*traj_qn), color='k')
 matplotlib.pyplot.scatter(*zip(*traj_qn), color='k')
 s = '{:d} steps'.format(len(traj_qn))
 matplotlib.pyplot.text(0.2, 0.1, s=s, fontsize=18, fontweight='bold')
-matplotlib.pyplot.savefig('qn')
+matplotlib.pyplot.savefig('figs/qn.png')
 matplotlib.pyplot.clf()
 
 # Plot the gradient descent trajectory
@@ -45,4 +45,4 @@ matplotlib.pyplot.plot(*zip(*traj_gd), color='k')
 matplotlib.pyplot.scatter(*zip(*traj_gd), color='k')
 s = '{:d} steps'.format(len(traj_gd))
 matplotlib.pyplot.text(0.2, 0.1, s=s, fontsize=18, fontweight='bold')
-matplotlib.pyplot.savefig('gd')
+matplotlib.pyplot.savefig('figs/gd.png')
